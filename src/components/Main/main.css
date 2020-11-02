@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  text-decoration: none;
+  color: white;
+}
+
+input, textarea {
+  outline: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.navigator {
+  min-height: 50px;
+  background-color: #032836;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.nav_button {
+  height: 50px;
+  margin: auto 1px;
+  padding: 16px 25px;
+  color: #ccc;
+  background-color: #00364b;
+  cursor: pointer;
+}
+
+.nav_button:hover,
+.nav_button:focus,
+.nav_button:active {
+  color: white;
+  background-color: #004863;
+}
