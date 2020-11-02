@@ -32,7 +32,7 @@ export default class Main extends Component {
             { page.map(item =>
                 <Route path={`/page${item}/modal`} 
                        key={`modal${item}`}
-                       render={props => <Modal {...props} />} >
+                       render={ props => <Modal {...props} /> } >
                 </Route>
             )}
             <Route exact path={"/"}>
