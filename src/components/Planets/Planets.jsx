@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { NavLink, Link } from 'react-router-dom';
-import Modal from "../Modal/Modal";
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import "./planets.css";
 
@@ -30,10 +29,11 @@ export default class Planets extends Component {
       .catch(() => alert(`😱 Axios request failed`));
     this.state.persons.map(item => {
       for (let pole in item) {
-        if (item[pole] === "unknown" || item[pole] === "0" || item[pole] === "N/A") item[pole] = "";
+        if (item[pole] === "unknown" || item[pole] === "0" || item[pole] === "N/A") 
+          item[pole] = "";
       }
     });
-    this.setState({ persons: this.state.persons });
+    this.setState({ persons: this.state.persons });    
   };
 
   render() {

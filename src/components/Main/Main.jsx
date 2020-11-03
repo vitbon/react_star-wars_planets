@@ -39,6 +39,7 @@ export default class Main extends Component {
               <Planets page="1" key="1" />
             </Route>
           </Switch>
+          
         </div>
       </Router>
     );

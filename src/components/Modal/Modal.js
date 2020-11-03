@@ -1,35 +1,26 @@
 import React, { Component } from "react";
-import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import "./modal.css";
-
-const SITE_API = 'https://swapi.dev/api/';
 
 export default class Modal extends Component {
   constructor(props) {
     super(props);
     this.state = {
       isOpen: true,
-      config: {
-        method: 'GET',
-        url: SITE_API + "planets/",
-        params: {
-          page: `${props.page}`,
-        },
-      },
       citizens: '',
     };
   }
 
   componentDidMount() {
     this.props.location.data.person.residents.map(item => {
+      if (item.startsWith("http:")) item = "https:" + item.slice(5);
       axios
         .get(item)
         .then(res => {
-          if (!this.state.citizens) {
-            this.setState({ citizens: res.data.name });
-          } else {
+          if (this.state.citizens) {
             this.setState({ citizens: this.state.citizens + ', ' + res.data.name });
+          } else {
+            this.setState({ citizens: res.data.name });
           }
         })
         .catch(() => alert(`😱 Axios request failed`));
@@ -49,7 +40,7 @@ export default class Modal extends Component {
           <div className="modal_overlay">
             <div className="modal_window">
               <div className="modal_header">
-                <span className="modal_title">Detailed Information</span>
+                <span className="modal_title">Подробная информация</span>
                 <span className="modal_close" onClick={this.closeModal}>X</span>
               </div>
               <div className="modal_body">
