@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/react_star-wars_planets/static/css/main.ffeffafb.chunk.css",
-    "main.js": "/react_star-wars_planets/static/js/main.2b9a78c5.chunk.js",
-    "main.js.map": "/react_star-wars_planets/static/js/main.2b9a78c5.chunk.js.map",
+    "main.css": "/react_star-wars_planets/static/css/main.6de8c6d0.chunk.css",
+    "main.js": "/react_star-wars_planets/static/js/main.2da4d527.chunk.js",
+    "main.js.map": "/react_star-wars_planets/static/js/main.2da4d527.chunk.js.map",
     "runtime-main.js": "/react_star-wars_planets/static/js/runtime-main.6355548a.js",
     "runtime-main.js.map": "/react_star-wars_planets/static/js/runtime-main.6355548a.js.map",
-    "static/js/2.2b728d2b.chunk.js": "/react_star-wars_planets/static/js/2.2b728d2b.chunk.js",
-    "static/js/2.2b728d2b.chunk.js.map": "/react_star-wars_planets/static/js/2.2b728d2b.chunk.js.map",
+    "static/js/2.063c7e90.chunk.js": "/react_star-wars_planets/static/js/2.063c7e90.chunk.js",
+    "static/js/2.063c7e90.chunk.js.map": "/react_star-wars_planets/static/js/2.063c7e90.chunk.js.map",
     "index.html": "/react_star-wars_planets/index.html",
-    "static/css/main.ffeffafb.chunk.css.map": "/react_star-wars_planets/static/css/main.ffeffafb.chunk.css.map",
-    "static/js/2.2b728d2b.chunk.js.LICENSE.txt": "/react_star-wars_planets/static/js/2.2b728d2b.chunk.js.LICENSE.txt"
+    "static/css/main.6de8c6d0.chunk.css.map": "/react_star-wars_planets/static/css/main.6de8c6d0.chunk.css.map",
+    "static/js/2.063c7e90.chunk.js.LICENSE.txt": "/react_star-wars_planets/static/js/2.063c7e90.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6355548a.js",
-    "static/js/2.2b728d2b.chunk.js",
-    "static/css/main.ffeffafb.chunk.css",
-    "static/js/main.2b9a78c5.chunk.js"
+    "static/js/2.063c7e90.chunk.js",
+    "static/css/main.6de8c6d0.chunk.css",
+    "static/js/main.2da4d527.chunk.js"
   ]
 }
